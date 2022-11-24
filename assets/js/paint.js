@@ -19,7 +19,7 @@ function addOpacity(imageNum) {
     // add appropriate CSS class
 
     let element = document.querySelector(`#${imageNum}`)
-    element.classList.add('priceDiv')
+    element.classList.add('dim')
     getProductInfo(imageNum);     
 }
 
@@ -27,7 +27,7 @@ function removeOpacity(imageNum) {
      //remove appropriate CSS class
 
     let element = document.getElementById(`${imageNum}`);
-    element.classList.remove('priceDiv') 
+    element.classList.remove('dim') 
     let colorPrice = document.querySelector('#color-price')
     let color = document.querySelector('#color-name')
     colorPrice.innerHTML = ''
